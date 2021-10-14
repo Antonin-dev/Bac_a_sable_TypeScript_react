@@ -13,7 +13,9 @@ export default function Container() {
         {tasks &&
           tasks.map((task, index: number) => {
             const { title, content } = task;
-            return <Task key={index} title={title} content={content} />;
+            return (
+              <Task key={index} title={title} content={content} index={index} />
+            );
           })}
       </div>
     </div>
