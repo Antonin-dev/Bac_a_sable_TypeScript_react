@@ -1,4 +1,4 @@
-import TaskProps from "../type/Type";
+import { TaskProps } from "../type/Type";
 
 export default function Task({ title, content }: TaskProps) {
   return (

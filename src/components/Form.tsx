@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { TasksProps } from "../type/Type";
 
-export default function Form({ tasks, setTasks }: any) {
+export default function Form({ tasks, setTasks }: TasksProps) {
   const [task, setTask] = useState({});
 
   const saveTask = (e: any): void => {
